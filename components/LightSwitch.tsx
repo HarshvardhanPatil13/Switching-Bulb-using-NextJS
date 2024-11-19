@@ -4,8 +4,8 @@ const LightSwitch: React.FC = () => {
   const [isOn, setIsOn] = useState(false);
 
   const toggleSwitch = () => {
-    if (!isOn) return; 
-    setIsOn(false); 
+    setIsOn((prevState) => !prevState);  
+
   };
 
   const enableSwitch = () => {
